@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\bin\Debug\net7.0\ApartmentPriceParser.Common.deps.json
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\bin\Debug\net7.0\ApartmentPriceParser.Common.dll
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\bin\Debug\net7.0\ApartmentPriceParser.Common.pdb
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\obj\Debug\net7.0\ApartmentPriceParser.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\obj\Debug\net7.0\ApartmentPriceParser.Common.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\obj\Debug\net7.0\ApartmentPriceParser.Common.AssemblyInfo.cs
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\obj\Debug\net7.0\ApartmentPriceParser.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\obj\Debug\net7.0\ApartmentPriceParser.Common.dll
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\obj\Debug\net7.0\refint\ApartmentPriceParser.Common.dll
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\obj\Debug\net7.0\ApartmentPriceParser.Common.pdb
+C:\Users\user\source\repos\ApartmentPriceParser\ApartmentDataExtractor\ApartmentPriceParser.Common\obj\Debug\net7.0\ref\ApartmentPriceParser.Common.dll

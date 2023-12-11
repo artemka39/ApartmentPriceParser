@@ -4,5 +4,6 @@
     {
         public string NameXpath {  get; set; }
         public string PriceXpath { get; set; }
+        public string SubstituteApartmentData { get; set; }
     }
 }

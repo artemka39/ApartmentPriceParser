@@ -24,7 +24,7 @@ namespace Client
                 new AvitoApartmentDefinition(0, "https://www.avito.ru/kaliningrad/kvartiry/1-k._kvartira_41m_210et._3471260202") 
             });
             jobDefinitions.Add(ProviderType.Cian, new List<object>() {
-                new CianApartmentDefinition(1, "https://kaliningrad.cian.ru/sale/flat/282498775")
+                new CianApartmentDefinition(1, "https://kaliningrad.cian.ru/sale/flat/295098495/")
             });
             return jobDefinitions;
         }

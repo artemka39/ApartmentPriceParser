@@ -3,7 +3,9 @@ using ApartmentPriceParser.Common.Models.Providers;
 using Client.DataProviders.Clients;
 using Client.DataProviders.Options;
 using HtmlAgilityPack;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
+using Refit;
 
 namespace Client.DataProviders
 {
@@ -19,13 +21,15 @@ namespace Client.DataProviders
         public async Task<ApartmentData> GetApartmentData(object request)
         {
             var definition = (CianApartmentDefinition)request;
-            var apartmentHtml = await cianDataExtarctor.GetApartmentData(definition.CianId);
             var doc = new HtmlDocument();
+            var apartmentHtmlResponse = await cianDataExtarctor.GetApartmentData(definition.CianId);
+            var apartmentHtml = apartmentHtmlResponse.IsSuccessStatusCode ?
+                await apartmentHtmlResponse.Content.ReadAsStringAsync() :
+                File.ReadAllText(cianProviderOptions.SubstituteApartmentData);
             doc.LoadHtml(apartmentHtml);
             var nameString = doc.DocumentNode.SelectSingleNode(cianProviderOptions.NameXpath)?.InnerText;
             var priceString = doc.DocumentNode.SelectSingleNode(cianProviderOptions.PriceXpath)?.InnerText;
-            var price = Convert.ToInt32(priceString.Where(c => char.IsDigit(c)).ToString());
-
+            var price = Convert.ToInt32(string.Concat(priceString.Where(c => char.IsDigit(c))));
 
             return new ApartmentData()
             {

@@ -789,9 +789,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\ApartmentPriceParser\\ApartmentDataExtractor\\Client\\Client.csproj",
-      "projectName": "Client",
-      "projectPath": "C:\\Users\\user\\source\\repos\\ApartmentPriceParser\\ApartmentDataExtractor\\Client\\Client.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\ApartmentPriceParser\\ApartmentDataExtractor\\Client\\ApartmentPriceParser.Worker.csproj",
+      "projectName": "ApartmentPriceParser.Worker",
+      "projectPath": "C:\\Users\\user\\source\\repos\\ApartmentPriceParser\\ApartmentDataExtractor\\Client\\ApartmentPriceParser.Worker.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\user\\source\\repos\\ApartmentPriceParser\\ApartmentDataExtractor\\Client\\obj\\",
       "projectStyle": "PackageReference",

@@ -6,5 +6,5 @@ namespace Client.DataProviders.Clients;
 public interface ICianClient
 {
     [Get("/sale/flat/{id}")]
-    Task<HttpResponseMessage> GetApartmentData(string id);
+    Task<string> GetApartmentData(string id);
 }

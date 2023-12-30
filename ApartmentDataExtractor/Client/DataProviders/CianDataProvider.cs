@@ -22,10 +22,15 @@ namespace Client.DataProviders
         {
             var definition = (CianApartmentDefinition)request;
             var doc = new HtmlDocument();
-            var apartmentHtmlResponse = await cianDataExtarctor.GetApartmentData(definition.CianId);
-            var apartmentHtml = apartmentHtmlResponse.IsSuccessStatusCode ?
-                await apartmentHtmlResponse.Content.ReadAsStringAsync() :
-                File.ReadAllText(cianProviderOptions.SubstituteApartmentData);
+            string apartmentHtml;
+            try
+            {
+                apartmentHtml = await cianDataExtarctor.GetApartmentData(definition.CianId);
+            }
+            catch (ApiException ex) when (ex.StatusCode != System.Net.HttpStatusCode.OK)
+            {
+                apartmentHtml = File.ReadAllText(cianProviderOptions.SubstituteApartmentData);
+            }
             doc.LoadHtml(apartmentHtml);
             var nameString = doc.DocumentNode.SelectSingleNode(cianProviderOptions.NameXpath)?.InnerText;
             var priceString = doc.DocumentNode.SelectSingleNode(cianProviderOptions.PriceXpath)?.InnerText;
